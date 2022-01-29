@@ -3,11 +3,20 @@
 github.com/Masterminds/semver
 # github.com/gardener/gardener v1.39.1 => github.com/timebertt/gardener v0.0.0-20220129103632-43f1a1deaf27
 ## explicit; go 1.16
+github.com/gardener/gardener/pkg/apis/authentication
+github.com/gardener/gardener/pkg/apis/authentication/v1alpha1
 github.com/gardener/gardener/pkg/apis/core
+github.com/gardener/gardener/pkg/apis/core/v1alpha1
 github.com/gardener/gardener/pkg/apis/core/v1beta1
 github.com/gardener/gardener/pkg/apis/core/v1beta1/constants
 github.com/gardener/gardener/pkg/apis/extensions
 github.com/gardener/gardener/pkg/apis/extensions/v1alpha1
+github.com/gardener/gardener/pkg/apis/operations
+github.com/gardener/gardener/pkg/apis/operations/v1alpha1
+github.com/gardener/gardener/pkg/apis/resources
+github.com/gardener/gardener/pkg/apis/resources/v1alpha1
+github.com/gardener/gardener/pkg/apis/settings
+github.com/gardener/gardener/pkg/apis/settings/v1alpha1
 github.com/gardener/gardener/pkg/utils/timewindow
 github.com/gardener/gardener/pkg/utils/version
 # github.com/go-logr/logr v0.4.0
