@@ -7,6 +7,7 @@ github.com/gardener/gardener/pkg/apis/authentication
 github.com/gardener/gardener/pkg/apis/authentication/v1alpha1
 github.com/gardener/gardener/pkg/apis/core
 github.com/gardener/gardener/pkg/apis/core/v1alpha1
+github.com/gardener/gardener/pkg/apis/core/v1alpha1/constants
 github.com/gardener/gardener/pkg/apis/core/v1beta1
 github.com/gardener/gardener/pkg/apis/core/v1beta1/constants
 github.com/gardener/gardener/pkg/apis/extensions
@@ -15,8 +16,13 @@ github.com/gardener/gardener/pkg/apis/operations
 github.com/gardener/gardener/pkg/apis/operations/v1alpha1
 github.com/gardener/gardener/pkg/apis/resources
 github.com/gardener/gardener/pkg/apis/resources/v1alpha1
+github.com/gardener/gardener/pkg/apis/seedmanagement
+github.com/gardener/gardener/pkg/apis/seedmanagement/encoding
+github.com/gardener/gardener/pkg/apis/seedmanagement/v1alpha1
 github.com/gardener/gardener/pkg/apis/settings
 github.com/gardener/gardener/pkg/apis/settings/v1alpha1
+github.com/gardener/gardener/pkg/gardenlet/apis/config
+github.com/gardener/gardener/pkg/gardenlet/apis/config/v1alpha1
 github.com/gardener/gardener/pkg/utils/timewindow
 github.com/gardener/gardener/pkg/utils/version
 # github.com/go-logr/logr v0.4.0
@@ -73,15 +79,22 @@ k8s.io/api/rbac/v1
 ## explicit; go 1.16
 k8s.io/apimachinery/pkg/api/resource
 k8s.io/apimachinery/pkg/apis/meta/v1
+k8s.io/apimachinery/pkg/apis/meta/v1/unstructured
 k8s.io/apimachinery/pkg/conversion
 k8s.io/apimachinery/pkg/conversion/queryparams
 k8s.io/apimachinery/pkg/fields
 k8s.io/apimachinery/pkg/labels
 k8s.io/apimachinery/pkg/runtime
 k8s.io/apimachinery/pkg/runtime/schema
+k8s.io/apimachinery/pkg/runtime/serializer
+k8s.io/apimachinery/pkg/runtime/serializer/json
+k8s.io/apimachinery/pkg/runtime/serializer/protobuf
+k8s.io/apimachinery/pkg/runtime/serializer/recognizer
+k8s.io/apimachinery/pkg/runtime/serializer/versioning
 k8s.io/apimachinery/pkg/selection
 k8s.io/apimachinery/pkg/types
 k8s.io/apimachinery/pkg/util/errors
+k8s.io/apimachinery/pkg/util/framer
 k8s.io/apimachinery/pkg/util/intstr
 k8s.io/apimachinery/pkg/util/json
 k8s.io/apimachinery/pkg/util/naming
@@ -91,8 +104,16 @@ k8s.io/apimachinery/pkg/util/runtime
 k8s.io/apimachinery/pkg/util/sets
 k8s.io/apimachinery/pkg/util/validation
 k8s.io/apimachinery/pkg/util/validation/field
+k8s.io/apimachinery/pkg/util/yaml
 k8s.io/apimachinery/pkg/watch
 k8s.io/apimachinery/third_party/forked/golang/reflect
+# k8s.io/component-base v0.22.2
+## explicit; go 1.16
+k8s.io/component-base/config
+k8s.io/component-base/config/v1alpha1
+# k8s.io/klog v1.0.0
+## explicit; go 1.12
+k8s.io/klog
 # k8s.io/klog/v2 v2.9.0
 ## explicit; go 1.13
 k8s.io/klog/v2
@@ -102,4 +123,7 @@ k8s.io/utils/pointer
 # sigs.k8s.io/structured-merge-diff/v4 v4.1.2
 ## explicit; go 1.13
 sigs.k8s.io/structured-merge-diff/v4/value
+# sigs.k8s.io/yaml v1.2.0
+## explicit; go 1.12
+sigs.k8s.io/yaml
 # github.com/gardener/gardener => github.com/timebertt/gardener v0.0.0-20220129103632-43f1a1deaf27

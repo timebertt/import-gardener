@@ -6,6 +6,7 @@ import (
 	extensionsv1alpha1 "github.com/gardener/gardener/pkg/apis/extensions/v1alpha1"
 	operationsv1alpha1 "github.com/gardener/gardener/pkg/apis/operations/v1alpha1"
 	resourcesv1alpha1 "github.com/gardener/gardener/pkg/apis/resources/v1alpha1"
+	seedmanagementv1alpha1 "github.com/gardener/gardener/pkg/apis/seedmanagement/v1alpha1"
 	settingsv1alpha1 "github.com/gardener/gardener/pkg/apis/settings/v1alpha1"
 )
 
@@ -20,4 +21,6 @@ func useGardenerAPIs() {
 	_ = &operationsv1alpha1.Bastion{}
 	_ = &resourcesv1alpha1.ManagedResource{}
 	_ = &settingsv1alpha1.OpenIDConnectPreset{}
+
+	_ = &seedmanagementv1alpha1.ManagedSeed{}
 }
